@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Print it ! - Impressions d'entreprise</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/sass/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,21 +26,26 @@
     <main>
       <div id="banner">
         <img
-          class="banner-img"
+          class="banner-img active"
           src="./assets/images/slideshow/slide1.jpg"
           alt="Banner Print-it"
         />
         <img
-          class="arrow arrow_left"
+          id="arrow_left"
+          class="arrow"
           src="./assets/images/arrow_left.png"
           alt="Banner Arrow Left"
         />
         <img
-          class="arrow arrow_right"
+          id="arrow_right"
+          class="arrow"
           src="./assets/images/arrow_right.png"
           alt="Banner Arrow Right"
         />
-        <p>Impressions tous formats <span>en boutique et en ligne</span></p>
+        <p class="tagline active">
+          Impressions tous formats <span>en boutique et en ligne</span>
+        </p>
+        <div class="dots"></div>
         <div class="dots"></div>
       </div>
       <section id="about-us" class="container">
