@@ -123,8 +123,10 @@ header {
     }
   }
 
+  // Fleches
   .arrow {
     position: absolute;
+    cursor: pointer;
 
     &#arrow_left {
       left: 10px;
@@ -135,6 +137,7 @@ header {
     }
   }
 
+  // Paragraphes d'images
   .tagline {
     opacity: 0;
     position: absolute;
@@ -146,6 +149,7 @@ header {
     }
   }
 
+  // Bullet points
   .dots {
     position: absolute;
     bottom: 40px;

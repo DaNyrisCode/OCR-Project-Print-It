@@ -1,6 +1,8 @@
 const arrows = document.querySelectorAll(".arrow");
 const bannerImg = document.querySelector(".banner-img");
 const tagline = document.querySelector(".tagline");
+const dotsContainer = document.querySelector(".dots");
+
 const slides = [
     {
         "image": "slide1.jpg",
@@ -20,7 +22,7 @@ const slides = [
     }
 ];
 
-// Représente l'index de la slide actuellement affichée. Oour suivre la position actuelle dans le tableau slides. Sera modifiée chaque fois que la slide change.
+// Représente l'index de la slide actuellement affichée. Pour suivre la position actuelle dans le tableau slides. Sera modifiée chaque fois que la slide change.
 let currentIndex = 0;
 
 // Permet de changer de slide en fonction de la direction (1 pour suivant, -1 pour précédent).
@@ -29,7 +31,7 @@ function changeSlide(direction) {
     if (currentIndex < 0) currentIndex = slides.length - 1;
     if (currentIndex >= slides.length) currentIndex = 0;
 
-    // Mettre à jour l'image et le texte
+    // Met à jour l'image et le texte
     bannerImg.src = `./assets/images/slideshow/${slides[currentIndex].image}`;
     tagline.innerHTML = slides[currentIndex].tagLine;
     }

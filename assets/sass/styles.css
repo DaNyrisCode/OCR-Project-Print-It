@@ -122,6 +122,7 @@ header .logo {
 }
 #banner .arrow {
   position: absolute;
+  cursor: pointer;
 }
 #banner .arrow#arrow_left {
   left: 10px;
