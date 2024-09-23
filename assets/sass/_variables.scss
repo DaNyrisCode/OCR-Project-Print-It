@@ -2,4 +2,13 @@
 $primary-color: #3396C0;
 $secondary-color: #CD006B;
 $third-color: #EEE325;
-$wht-font : white
+$wht-font : white;
+
+@keyframes anim-scale {
+    from {
+        scale: 1;
+    }    
+    to {
+        scale: 1.3;
+    }
+}
